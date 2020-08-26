@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Calculateur d'impot</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1 style="text-align: center;">Calculateur d'impôt</h1>
+
+      <div>
+        <form>
+          <div class="form-group">
+            <label for "revenu">Revenus</label>
+            <input class="form-control" id="revenu" type="number" name="revenu">
+          </div>
+
+          <div class="form-group">
+            <label for="impot">Impôt</label>
+            <input class="form-control" id="impot" type="number" name="impot">
+          </div>
+
+          <div class="form-group">
+            <label for="net">Net d'impôt</label>
+            <input class="form-control" id="net" type="number" name="net">
+          </div>
+
+          <div class="form-group">
+            <label for="enfants">Nombre d'enfants</label>
+            <input class="form-control" id="enfants" type="number" name="enfants" value="0">
+          </div>
+
+          <div class="form-check">
+            <input class="form-check-input" id="couple" type="checkbox" name="couple">
+            <label class="form-check-label" for="couple">En couple ?</label>
+          </div>
+
+
+        </form>
+      </div>
+
+      <div>
+        <table id="table" class="table table-striped"></table>
+      </div>
+
+    </div>
+  </body>
+
+  <script src="main.js"></script>
+</html>
